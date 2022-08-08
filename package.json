@@ -19,7 +19,7 @@
     "node-template"
   ],
   "author": "Baraka M Mulumia",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Baraka-Mulumia/node-app-template/issues"
   },
