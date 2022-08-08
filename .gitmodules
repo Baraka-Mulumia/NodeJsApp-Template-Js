@@ -1,0 +1,3 @@
+[submodule "bmm-fns"]
+	path = bmm-fns
+	url = https://github.com/Baraka-Mulumia/bmm-fns.git
