@@ -1,16 +1,13 @@
 //use nodemailer to send email
 
 import HandleError from "../HandleError";
-import dotenv from "dotenv";
+import { MAIL_TRANSPORT_PASSWORD } from "../../config/constants";
 import { infoLog } from "../logger";
 import nodemailer from "nodemailer";
 
-dotenv.config();
-const MAIL_TRANSPORT_PASSWORD = process.env.MAIL_TRANSPORT_PASSWORD;
-
 const sendWithNodeMailer = async ({
     subject,
-    to = "johncmiles2@gmail.com",
+    to = "test@gmail.com",
     html = "",
     cc = [],
     bcc = [],

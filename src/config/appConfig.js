@@ -6,7 +6,7 @@ dotenv.config();
 export const APP_CONFIG = {
     port: process.env.DEV_APP_PORT || 1337,
     appName: process.env.APP_NAME || "node-app",
-    env: process.env.NODE_ENV || "production",
+    env: process.env.NODE_ENV || "development",
 };
 
 export const LOG_CONFIG = {
