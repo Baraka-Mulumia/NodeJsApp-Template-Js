@@ -15,5 +15,5 @@ export const LOG_CONFIG = {
 };
 
 export const DB_CONFIG = {
-    mongoDBUrl: process.env.MONGODB_URI || "mongodb://localhost:27017/node-app",
+    mongoDBUrl: process.env.MONGODB_URI || "mongodb://0.0.0.0:27017/SampleDB", //"mongodb://localhost:27017/node-app",
 };
