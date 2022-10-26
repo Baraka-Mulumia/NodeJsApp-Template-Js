@@ -1,6 +1,6 @@
 //use nodemailer to send email
 
-import { errorLog, infoLog } from "../logger";
+import { ErrorLogger, InfoLogger } from "../logger";
 
 import { MAIL_TRANSPORT_PASSWORD } from "../../config/constants";
 import { extractErrorMessage } from "../HandleError";
@@ -31,12 +31,12 @@ const sendWithNodeMailer = async ({
             html,
         };
 
-        transporter.sendMail(mailOptions, function(error, info) {
+        transporter.sendMail(mailOptions, function (error, info) {
             if (error) {
-                errorLog("Error sending email " + extractErrorMessage(error));
+                ErrorLogger("Error sending email " + extractErrorMessage(error));
                 reject(error);
             } else {
-                infoLog(`[Notified ${to}] about ${subject}`);
+                InfoLogger(`[Notified ${to}] about ${subject}`);
                 resolve(info);
             }
         });
