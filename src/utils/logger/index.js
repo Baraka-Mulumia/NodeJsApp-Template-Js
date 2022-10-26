@@ -1,8 +1,8 @@
 import logger from "./logger";
 import util from "util";
 
-export const infoLog = message => logger.log(message, "info");
-export const errorLog = message => logger.log(message, "error");
-export const warningLog = message => logger.log(message, "warn");
+export const InfoLogger = (message, data) => logger.log(message, "info", data);
+export const ErrorLogger = (message, data) => logger.log(message, "error", data);
+export const WarningLogger = (message, data) => logger.log(message, "warn", data);
 
-export const logAndInspect = obj => console.log(util.inspect(obj, false, null, true));
+export const logAndInspect = (obj) => console.log(util.inspect(obj, false, null, true));
