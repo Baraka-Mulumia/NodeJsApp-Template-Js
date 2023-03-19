@@ -1,3 +1,3 @@
-# node-app-template
+# NodeJsApp-Template-Ts
 
-Sample project structure for most of my node-js backend apps
+Project structure template for node js apps using Javascrpt and es modules
